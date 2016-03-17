@@ -1,0 +1,22 @@
+﻿
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/App.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<div id="body"  ng-controller="homeCtrl">  
+   true {{test}}
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+
+            <th>Last Name</th>
+
+        </tr>
+        <tr ng-repeat=" u in users">
+             <td>{{u.Id}}</td>
+            <td>{{u.FirstName}}</td>
+            <td>{{u.LastName}}</td>            
+        </tr>
+    </table>
+
+</div>

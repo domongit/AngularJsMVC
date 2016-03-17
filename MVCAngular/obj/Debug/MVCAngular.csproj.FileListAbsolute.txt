@@ -1,0 +1,128 @@
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\MVCAngular.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\MVCAngular.pdb
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Antlr3.Runtime.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\EntityFramework.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Data.Edm.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Data.OData.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Web.Infrastructure.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Newtonsoft.Json.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Spatial.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Helpers.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Http.OData.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Http.Tracing.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Mvc.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Optimization.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Providers.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Razor.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.Deployment.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.Razor.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\WebGrease.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\EntityFramework.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Newtonsoft.Json.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Helpers.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Mvc.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Razor.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.Deployment.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.WebPages.Razor.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Http.Tracing.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Web.Http.OData.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Data.Edm.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\Microsoft.Data.OData.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\System.Spatial.xml
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\de\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\es\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\fr\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\it\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ja\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ko\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\ru\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\obj\Debug\MVCAngular.csprojResolveAssemblyReference.cache
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\obj\Debug\MVCAngular.dll
+c:\users\domlum\documents\visual studio 2012\Projects\MVCAngular\MVCAngular\obj\Debug\MVCAngular.pdb
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\MVCAngular.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\MVCAngular.pdb
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Antlr3.Runtime.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\EntityFramework.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Data.Edm.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Data.OData.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Web.Infrastructure.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Newtonsoft.Json.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Spatial.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Helpers.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Http.OData.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Http.Tracing.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Mvc.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Optimization.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Providers.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Razor.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.Deployment.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.Razor.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\WebGrease.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\EntityFramework.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Newtonsoft.Json.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Helpers.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Mvc.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Razor.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.Deployment.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.WebPages.Razor.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Http.Tracing.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Web.Http.OData.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Data.Edm.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\Microsoft.Data.OData.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\System.Spatial.xml
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\de\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\es\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\it\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\de\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\es\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\fr\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\it\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ja\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ko\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ru\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\de\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\es\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\fr\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\it\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ja\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ko\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\ru\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hans\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\bin\zh-Hant\System.Spatial.resources.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\obj\Debug\MVCAngular.csprojResolveAssemblyReference.cache
+C:\someStuff\GitHub\MVCAngular\MVCAngular\obj\Debug\MVCAngular.dll
+C:\someStuff\GitHub\MVCAngular\MVCAngular\obj\Debug\MVCAngular.pdb

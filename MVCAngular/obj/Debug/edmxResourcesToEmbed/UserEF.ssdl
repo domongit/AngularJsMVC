@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="User" EntityType="Database1Model.Store.User" store:Type="Tables" store:Name="User">
+      <DefiningQuery>SELECT 
+            [User].[Id] AS [Id], 
+            [User].[FirstName] AS [FirstName], 
+            [User].[LastName] AS [LastName]
+            FROM [User] AS [User]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+            warning 6002: The table/view 'User' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+            -->
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+</Schema>
