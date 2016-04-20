@@ -24,13 +24,17 @@ namespace MVCAngular.Controllers.Api
         }
 
         // POST api/homes
-        public void Post([FromBody]string value)
+        public void Post(User uData)
         {
+            _USContext = new UserContext();
+             _USContext.AddUser(uData);
         }
 
         // PUT api/homes/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(User uData)
         {
+            _USContext = new UserContext();
+            _USContext.Update(uData);
         }
 
         // DELETE api/homes/5
