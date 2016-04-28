@@ -12,7 +12,10 @@
 
                 </tr>
                 <tr ng-repeat=" u in users">
-                    <td><button type="button" class="btn btn-primary" ng-click="EditUser($index)"> Edit</button></td>
+                    <td><button type="button" class="btn btn-primary btn-xs" ng-click="EditUser($index)"> Edit</button>
+
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="DeleteUser($index)">Delete </button>
+                    </td>
                      <td>{{u.Id}}</td>
                     <td>{{u.FirstName}}</td>
                     <td>{{u.LastName}}</td>            
@@ -49,7 +52,8 @@
           <div class="modal-footer">
                
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type ="button" class="btn btn-primary" ng-click="AddUser(user)"> Save</button>
+             
+            <button   type ="button" class="btn btn-primary" ng-click="AddUser(newUser)"> Save</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -77,11 +81,15 @@
         $scope.GetUsers();
 
         $scope.AddUserModal = function () {
+            $scope.newUser = angular.copy($scope.users[0]);
+            $scope.newUser.FirstName = '';
+            $scope.newUser.LastName = '';
+            $scope.newUser.Id = '';
             $('#myModal').modal("show");
         }
 
         $scope.AddUser = function () {
-            if ($scope.newUser.id > 0) {
+            if ($scope.newUser.Id > 0) {
                 $http.put(url, $scope.newUser).success(function (response) {
                     $scope.GetUsers();
                     $('#myModal').modal("hide");
@@ -101,6 +109,32 @@
             console.log($scope.newUser);
             $('#myModal').modal("show");
         };
+
+        $scope.DeleteUser = function (id) {
+
+            var id = $scope.users[id].Id;
+
+            console.log(id);
+
+            $http({
+                method: 'DELETE',
+                url: url,
+                data :JSON.stringify ({id :3})
+            }).then(function successCallback(response) {
+                $scope.GetUsers();
+                $('#myModal').modal("hide");
+            }, function errorCallback(response) {
+                console.log('hodor');
+            });
+
+
+            //$http.delete(url, id).success(function (response) {
+            //    $scope.GetUsers();
+            //    $('#myModal').modal("hide");
+            //});
+
+        }
+
 
         $scope.user = function () {
             this.FirstName = '';

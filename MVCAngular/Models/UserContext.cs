@@ -11,9 +11,15 @@ namespace MVCAngular.Models
         public IEnumerable<User> GetAllUsers()
         {
             var results = new List<User>();
-            using (_userEnt = new UserEntity())
+            try
             {
-                results = _userEnt.Users.ToList();
+                using (_userEnt = new UserEntity())
+                {
+                    results = _userEnt.Users.ToList();
+                }
+            }
+            catch
+            {
             }
 
             return results;
@@ -21,23 +27,51 @@ namespace MVCAngular.Models
 
         public void  AddUser(User uData)
         {
-            using (_userEnt = new UserEntity())
+            try
             {
-                _userEnt.Users.Add(uData);
-                _userEnt.SaveChanges();
-            } 
+                using (_userEnt = new UserEntity())
+                {
+                    _userEnt.Users.Add(uData);
+                    _userEnt.SaveChanges();
+                }
+            }
+            catch { }
         }
 
 
         public void Update(User data)
         {
-            using (_userEnt = new UserEntity())
+            try
             {
-                _userEnt.Users.Attach(data);
-                _userEnt.Entry<User>(data).State = System.Data.EntityState.Modified;
-                _userEnt.SaveChanges(); ;
-                _userEnt.SaveChanges();
-            } 
+                using (_userEnt = new UserEntity())
+                {
+                    _userEnt.Users.Attach(data);
+                    _userEnt.Entry<User>(data).State = System.Data.EntityState.Modified;
+                    _userEnt.SaveChanges();
+                }
+            }
+            catch
+            { }
+        }
+
+        public void Delete(int id)
+        {
+            try
+            {
+
+                using (_userEnt = new UserEntity())
+                {
+
+                    var usr = _userEnt.Users.Find(id);
+                    _userEnt.Users.Attach(usr);
+
+                    _userEnt.Entry<User>(usr).State = System.Data.EntityState.Deleted;
+                    _userEnt.SaveChanges(); ;
+
+                }
+            }
+
+            catch { }
         }
     }
 }
