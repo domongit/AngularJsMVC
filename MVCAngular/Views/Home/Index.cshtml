@@ -1,22 +1,145 @@
-﻿
-<script src="~/Scripts/angular.js"></script>
-<script src="~/Scripts/App.js"></script>
-<link href="~/Content/bootstrap.css" rel="stylesheet" />
-<div id="body"  ng-controller="homeCtrl">  
-   true {{test}}
-    <table class="table table-striped">
-        <tr>
-            <th>ID</th>
-            <th>FirstName</th>
+﻿ 
+<div id="body"  ng-controller="homeCtrl" class="container">  
+    <div class="row" >
+        <div class="col-md-12">
+             <table class="table table-striped">
+                <tr>
+                    
+                    <th colspan="2">ID</th>
+                    <th>FirstName</th>
 
-            <th>Last Name</th>
+                    <th>Last Name</th>
 
-        </tr>
-        <tr ng-repeat=" u in users">
-             <td>{{u.Id}}</td>
-            <td>{{u.FirstName}}</td>
-            <td>{{u.LastName}}</td>            
-        </tr>
-    </table>
+                </tr>
+                <tr ng-repeat=" u in users">
+                    <td><button type="button" class="btn btn-primary btn-xs" ng-click="EditUser($index)"> Edit</button>
 
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="DeleteUser($index)">Delete </button>
+                    </td>
+                     <td>{{u.Id}}</td>
+                    <td>{{u.FirstName}}</td>
+                    <td>{{u.LastName}}</td>            
+                </tr>
+            </table>
+
+        </div>
+           </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="button" class="btn btn-primary" ng-click="AddUserModal()"> Add User</button>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="firstName">First name </label> <input type="text" ng-model="newUser.FirstName" maxlength="5" name="firstName"/>
+                </div>
+                
+              </div>
+              <div class="row">
+                  <div class="col-md-4">
+                    <label for="lastName">Last name </label> <input type="text" ng-model="newUser.LastName" maxlength="5" name="lastName"/>
+                </div>
+              </div>
+             </div>
+          <div class="modal-footer">
+               
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             
+            <button   type ="button" class="btn btn-primary" ng-click="AddUser(newUser)"> Save</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </div>
+ @Scripts.Render("~/bundles/jquery")
+
+<script src="~/Scripts/App.js"></script>
+ 
+<script type="text/javascript">
+
+    myApp.controller('homeCtrl', function ($scope, $http) {
+         
+        $scope.GetUsers = function () {
+            $http.get(url).success(function (resp) {
+                $scope.users = resp;
+                $scope.newUser = angular.copy($scope.users[0]);
+                $scope.newUser.FirstName = '';
+                $scope.newUser.LastName = '';
+                $scope.newUser.Id = '';
+            });
+
+        };
+
+        $scope.GetUsers();
+
+        $scope.AddUserModal = function () {
+            $scope.newUser = angular.copy($scope.users[0]);
+            $scope.newUser.FirstName = '';
+            $scope.newUser.LastName = '';
+            $scope.newUser.Id = '';
+            $('#myModal').modal("show");
+        }
+
+        $scope.AddUser = function () {
+            if ($scope.newUser.Id > 0) {
+                $http.put(url, $scope.newUser).success(function (response) {
+                    $scope.GetUsers();
+                    $('#myModal').modal("hide");
+                });
+            }
+            else {
+                $http.post(url, $scope.newUser).success(function (response) {
+                    $scope.GetUsers();
+                    $('#myModal').modal("hide");
+                });
+            }
+        }
+
+        $scope.EditUser = function (id) {
+     
+            $scope.newUser = $scope.users[id];
+            console.log($scope.newUser);
+            $('#myModal').modal("show");
+        };
+
+        $scope.DeleteUser = function (id) {
+
+            var id = $scope.users[id].Id;
+
+            console.log(id);
+
+            $http({
+                method: 'DELETE',
+                url: url,
+                data :JSON.stringify ({id :3})
+            }).then(function successCallback(response) {
+                $scope.GetUsers();
+                $('#myModal').modal("hide");
+            }, function errorCallback(response) {
+                console.log('hodor');
+            });
+
+
+            //$http.delete(url, id).success(function (response) {
+            //    $scope.GetUsers();
+            //    $('#myModal').modal("hide");
+            //});
+
+        }
+
+
+        $scope.user = function () {
+            this.FirstName = '';
+            this.LastName = '';
+
+        };
+    });
+</script>
