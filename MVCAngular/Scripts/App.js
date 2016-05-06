@@ -1,5 +1,5 @@
 ﻿var myApp = angular.module('myApp', []);
-var url ='Api/MG/'
+var url ='Api/Homes/'
 
 //myApp.controller('homeCtrl', function ($scope, $http) {
 //    $scope.test = "hllo";
