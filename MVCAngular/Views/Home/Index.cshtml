@@ -124,22 +124,10 @@ myApp.factory('user',function(){
 
             console.log(id);
 
-            $http({
-                method: 'DELETE',
-                url: url,
-                data :JSON.stringify ({id :3})
-            }).then(function successCallback(response) {
+            $http.delete(url+ id).success(function (response) {
                 $scope.GetUsers();
                 $('#myModal').modal("hide");
-            }, function errorCallback(response) {
-                console.log('hodor');
             });
-
-
-            //$http.delete(url, id).success(function (response) {
-            //    $scope.GetUsers();
-            //    $('#myModal').modal("hide");
-            //});
 
         }
 
