@@ -65,12 +65,20 @@
  
 <script type="text/javascript">
 
-    myApp.controller('homeCtrl', function ($scope, $http) {
+
+myApp.factory('user',function(){
+    var c= function(){
+        this.FirstName='';
+        this.LastName ='';
+        this.Id='';
+    }
+})
+    myApp.controller('homeCtrl', function ($scope, $http,user) {
          
         $scope.GetUsers = function () {
             $http.get(url).success(function (resp) {
                 $scope.users = resp;
-                $scope.newUser = angular.copy($scope.users[0]);
+                $scope.newUser = new user();
                 $scope.newUser.FirstName = '';
                 $scope.newUser.LastName = '';
                 $scope.newUser.Id = '';
@@ -81,7 +89,7 @@
         $scope.GetUsers();
 
         $scope.AddUserModal = function () {
-            $scope.newUser = angular.copy($scope.users[0]);
+            $scope.newUser = new user();
             $scope.newUser.FirstName = '';
             $scope.newUser.LastName = '';
             $scope.newUser.Id = '';
