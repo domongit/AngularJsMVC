@@ -40,9 +40,11 @@ var url ='Api/Homes/'
 //    };
 //});
 
-myApp.service('user', function () {
-    this.firstName = '';
-    this.lastName = '';
-     
+myApp.factory('user', function () {
+    var Q = function () {
+        this.firstName = "";
+        this.lastName = "";
+
+    };
+    return Q;
 });
- 

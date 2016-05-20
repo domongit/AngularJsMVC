@@ -65,15 +65,7 @@
  
 <script type="text/javascript">
 
-
-myApp.factory('user',function(){
-    var c= function(){
-        this.FirstName='';
-        this.LastName ='';
-        this.Id='';
-    }
-})
-    myApp.controller('homeCtrl', function ($scope, $http,user) {
+         myApp.controller('homeCtrl', function ($scope, $http,user) {
          
         $scope.GetUsers = function () {
             $http.get(url).success(function (resp) {
@@ -130,12 +122,6 @@ myApp.factory('user',function(){
             });
 
         }
-
-
-        $scope.user = function () {
-            this.FirstName = '';
-            this.LastName = '';
-
-        };
+         
     });
 </script>
