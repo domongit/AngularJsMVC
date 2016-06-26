@@ -7,8 +7,8 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
-    <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="10" FixedLength="true" Unicode="true" />
   </EntityType>
 </Schema>

@@ -1,45 +1,42 @@
 ﻿var myApp = angular.module('myApp', []);
-var url ='Api/Homes/'
+var url = 'Api/Homes/';
 
-//myApp.controller('homeCtrl', function ($scope, $http) {
-//    $scope.test = "hllo";
+myApp.directive('customButton', function () {
+    return {
+        restrict: 'EAC', // Element ,Attribrute,Class
+        link: function (scope, element, attrs) {
+            //DOM manipulation comes here
+        },
+        template: "<button type='button' class='btn btn-primary '> Directive button </button>"
 
+    };
+})
 
+myApp.directive('customManipulate', function () {
+    return {
+        restrict: 'EA', // Element ,Attribrute,Class
+        link: function (scope, element, attrs) {
+            element.bind("mouseenter", function () {
+                element.html("you are here");
+            });
+            element.bind("mouseleave", function () {
+                element.html("You are gone");
+            });
+
+        } 
+    };
+})
  
-
-//  $scope.GetUsers = function () {
-//      $http.get(url).success(function (resp) {
-//          $scope.users = resp;
-//          $scope.newUser = angular.copy($scope.users[0]);
-//          $scope.newUser.FirstName = '';
-//          $scope.newUser.LastName = '';
-//          $scope.newUser.Id = '';
-//      });
-
-//  };
-
-//  $scope.AddUserModal = function () {
-//      alert('asdas');
-//      $('#myModal').modal('show')
-
-//  }
-
-//    $scope.AddUser = function () {
-//        $http.post(url, $scope.newUser).success(function (response) {
-//            $scope.GetUsers();
-//        });
-//    }
-
-//    //$http.post(url, $scope.users).success(function (response) {
-//    //});
-
-//    $scope.user = function () {
-//        this.FirstName = '';
-//        this.LastName = '';
-
-//    };
-//});
-
+myApp.filter('titlecase', function () {
+    return function (text) {
+        if (text != "") {
+            return text.charAt(0).toUpperCase() + text.substring(1);
+        }
+        else {
+            return "";
+        }
+    };
+});
 myApp.factory('user', function () {
     var Q = function () {
         this.firstName = "";

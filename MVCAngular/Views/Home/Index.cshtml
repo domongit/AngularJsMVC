@@ -2,6 +2,7 @@
 <div id="body"  ng-controller="homeCtrl" class="container">  
     <div class="row" >
         <div class="col-md-12">
+            <input type ="text" ng-model ="filterme" />
              <table class="table table-striped">
                 <tr>
                     
@@ -11,17 +12,19 @@
                     <th>Last Name</th>
 
                 </tr>
-                <tr ng-repeat=" u in users">
+                <tr ng-repeat=" u in users  ">
                     <td><button type="button" class="btn btn-primary btn-xs" ng-click="EditUser($index)"> Edit</button>
 
                         <button type="button" class="btn btn-danger btn-xs" ng-click="DeleteUser($index)">Delete </button>
                     </td>
                      <td>{{u.Id}}</td>
-                    <td>{{u.FirstName}}</td>
+                    <td>{{u.FirstName |titlecase}}</td>
                     <td>{{u.LastName}}</td>            
                 </tr>
             </table>
-
+             @*<custom-button ></custom-button>
+             <div custom-button></div>
+             <div custom-manipulate> change my text  </div>*@
         </div>
            </div>
     <div class="row">
@@ -54,6 +57,7 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
              
             <button   type ="button" class="btn btn-primary" ng-click="AddUser(newUser)"> Save</button>
+             
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
